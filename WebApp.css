@@ -1,0 +1,182 @@
+body {
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.WebApp-error {
+  background: red;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.WebApp-button {
+  background: white;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-weight: 500;
+  color: blue;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.WebApp-button:hover, .WebApp-button:focus {
+  box-shadow: 0 0 2px 1px lightgrey;
+}
+
+.WebApp-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.WebApp-header-title {
+  font-weight: 500;
+}
+
+.WebApp-header-subtitle {
+  margin: 0 0 20px 0;
+  font-weight: normal;
+  font-size: 22px;
+}
+
+.WebApp-header-link {
+  text-decoration: none;
+}
+
+.WebApp-body {
+  display: flex;
+  justify-content: center;
+  height: 550px;
+}
+
+.WebApp-container-root {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.WebApp-container-title {
+  font-weight: normal;
+  text-align: center
+}
+
+.WebApp-arrow-right-to-left {
+  background: url('./arrow-right-to-left.svg') right center no-repeat;
+}
+
+.WebApp-arrow-left-to-right {
+  background: url('./arrow-left-to-right.svg') left center no-repeat;
+}
+
+.WebApp-chat-root,
+.WebApp-log-root,
+.WebApp-wit-image-root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: 1px solid lightgrey;
+  margin: 0 15px;
+}
+
+.WebApp-chat-list {
+  box-sizing: border-box;
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.WebApp-user-bubble,
+.WebApp-bot-bubble {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px;
+  max-width: 70%;
+}
+
+.WebApp-user-bubble {
+  background: rgba(0, 0, 0, 0.04);
+  align-self: left;
+}
+
+.WebApp-bot-bubble {
+  background: #208bf5;
+  color: white;
+  align-self: flex-end;
+}
+
+.WebApp-empty-message {
+  box-sizing: border-box;
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: lightgrey;
+}
+
+.WebApp-chat-composer {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-top: 1px solid lightgrey;
+  padding: 10px 5px;
+  outline: none;
+  font-size: 15px;
+}
+
+.WebApp-wit-image-root {
+  justify-content: center;
+  align-items: center;
+}
+
+.WebApp-chat-composer-info {
+  border-top: 1px solid lightgrey;
+  color: grey;
+  font-size: 13px;
+  padding: 5px;
+  background: #f9f8f8;
+}
+
+.WebApp-wit-image-root:hover,
+.WebApp-wit-image-root:focus,
+.WebApp-wit-image-root:hover .WebApp-wit-image,
+.WebApp-wit-image-root:focus .WebApp-wit-image {
+  box-shadow: 0 0 2px 1px lightgrey;
+}
+
+.WebApp-wit-image {
+  width: 50%;
+  border-radius: 100%;
+}
+
+.WebApp-log-root {
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.WebApp-log-break {
+  font-family: monospace;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.WebApp-log-item {
+  font-family: monospace;
+  margin-bottom: 10px;
+}
+
+.WebApp-log-comment {
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.WebApp-log-value {
+  color: blue;
+}

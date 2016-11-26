@@ -1,0 +1,7 @@
+const SERVER_PORT = 5000;
+module.exports = {
+  WEATHER_APPID: 'ce817047e8cac074ac3c07feb6660548',
+  WIT_TOKEN: 'NPA4PVIJXGWXYNQGZDWIZ5J52Q655GJV',
+  SERVER_PORT,
+  API_URL: `http://localhost:${SERVER_PORT}`
+}
